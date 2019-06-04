@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+.image1 {
+  max-width: 100%;
+  width: 38vH;
+  height: auto;
+  padding-left: 3vH;
+}
+
+.container {
+  max-width: 100%;
+  height: 100%;
+}
+
+.main-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: transparent;
+  font-family: Helvetica;
+}
+
+.main-nav ul {
+  margin: 1em 0 .5em;
+  text-align: center;
+  padding-left: 11vH;
+}
+.main-nav li {
+  display: inline;
+}
+.main-nav a {
+  display: inline-block;
+  padding: .5em 3.5em;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.navbar a {
+  float: right;
+  font-size: 2.4vH;
+  color: gray;
+  text-align: center;
+  padding: 3vH 3vH;
+  text-decoration: none;
+  position: relative;
+
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 2.4vH;  
+  border: none;
+  outline: none;
+  color: gray;
+  padding: 3vH 3vH;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  position: relative;
+}
+
+.button {
+  font-size: 2.4vH;  
+  border: none;
+  outline: none;
+  color: gray;
+  padding: 12px 12px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  cursor: pointer;
+ 
+
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: transparent;
+}
+
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-size: 2.4vH;
+}
+
+.dropdown-content a {
+  float: none;
+  color: gray;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.button:hover {
+  background-color: #d1d1d1;
+}
+
+.button:active {
+  background-color: #d1d1d1;
+  box-shadow:0 5px #555;
+  transform: translateY(4px);
+}
+</style>
+</head>
+
+
+<body>
+<header class="main-header">
+  <div class="container">
+    <h1 class="mh-logo">
+      <img class = "image1" src="file:///Users/Kazzy/Desktop/MOM's%20WEBSITE/Pictures%20for%20the%20Website/chiyo%20shidara%20logo.png" width="170" height="95" alt="Office logo" style="position: relative; top: -1vH;">
+    </h1>
+    <nav class="main-nav">
+      <ul class="main-nav-list">
+        <div class="navbar">
+            <a href="https://www.rateabiz.com/reviews/chiyo-shidara-dds-douglas-gordon-dds-pinole-ca/f974c6fa3a2698fb7a2bc820ae471cf5/summary" >
+              <button class="button" style="border-style: double; border-color:gray; position: relative; top: -12px;">Schedule Appointment</button>
+            </a>
+            <a href="contactUs.html" style=" ">Contact Us</a>
+            <div class="dropdown">
+              <button class="dropbtn" class="button">Services
+                  <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                  <a href="servicesGENERAL.html">General Dentistry</a>
+                  <a href="servicesCOSMETIC.html">Cosmetics</a>
+              </div>
+            </div> 
+            <div class="dropdown">
+              <button class="dropbtn">For Patients
+                  <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                  <a href="forPatientsNEW.html">New Patients</a>
+                  <a href="forPatientsPAYMENT.html">Payment and Insurance</a>
+              </div>
+            </div> 
+            <div class="dropdown">
+              <button class="dropbtn">About Us
+                  <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                  <a href="aboutUsMeetTheTeam.html">Meet the Team</a>
+                  <a href="aboutUsReviews.html">Reviews</a>
+              </div>
+            </div> 
+            <a href="index.html">Home</a>
+        </div>
+      </ul>
+    </nav>
+  </div>
+</header>
+</body>
+
+<hr style=" position: relative; width: 100%; top: -5vH;">
+
+<style>
+.flex-container {
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  align-items: stretch;
+  height: 75vH;
+
+}
+
+.flex-container > div {
+  background-color: transparent;
+  width: 700px;
+  margin: 80px;
+  text-align: center;
+  line-height: auto; 
+  font-family: Helvetica;
+}
+
+.image {
+  display: block; 
+  margin-right: auto; 
+  margin-left: auto;
+  width: 8vH;
+  height:8vH;
+}
+
+</style>
+
+
+<div class="flex-container">
+ 
+  <div style="font-size: 3.7vH;">General Information 
+    <br>
+    <br>
+    <img src="file:///Users/Kazzy/Desktop/MOM's%20WEBSITE/Pictures%20for%20the%20Website/045b0cad-6bab-4e70-b216-a3ad68da453c_200x200.png" class="image">
+    <p style=" font-size: 2.5vH; color: #4787B0;"> To make an appointment, please call us at:</p>
+    <a href="tel:1-510-741-7100" style="font-size: 3vH; color: black">(510)741-7100</a>
+    <p style=" font-size: 2.5vH; color: #4787B0;"> Please arrive 5 minutes prior to your scheduled appointment</p>
+  </div>
+    
+
+  <div style="font-size: 3.7vH;"> Accepted Insurance
+    <br>
+    <br>
+    <img src="file:///Users/Kazzy/Desktop/MOM's%20WEBSITE/Pictures%20for%20the%20Website/22b7fb0d-21ef-423a-a414-de656c7ca8ba_200x200.png" class="image">
+    <p style="font-size: 2.5vH; color: #4787B0;"> We accept various dental insurances, including, but not limited to:</p>
+    <ul style="font-size: 2.5vH; text-align: left;">
+      <li>All PPO plans</li>
+      <li>Delta Dental Premiere</li>
+      <li>Delta Dental PPO</li>
+      <li>Metlife</li>
+    </ul>
+  </div>
+
+
+
+
+
+  <div style="font-size: 3.7vH;">Payment Options
+    <br>
+    <br>
+    <img src="file:///Users/Kazzy/Desktop/MOM's%20WEBSITE/Pictures%20for%20the%20Website/a6df7eb2-1159-4207-8f4b-8dc2770a663d_200x200.png" class="image">
+    <p style= "font-size: 2.5vH; color: #4787B0;">The following forms of payments are accepted in our office: </p>
+    <ul style="font-size: 2.5vH; text-align: left;">
+      <li>Cash</li>
+      <li>Checks</li>
+      <li>Visa, Mastercard, American Express, Discover</li>
+      <li>CareCredit</li>
+    </ul>
+  </div>  
+</div>
+
+<style>
+
+.footer {
+   position: relative;
+   width: 100%;
+   background-color: gray;
+   color: white;
+   list-style-type: none;
+   text-align: center;
+   margin: 0;
+   padding: 3vH;
+   bottom: 0;
+}
+
+.footerElements {
+  display: inline-block;
+  font-size: 2.0vH;
+  padding-left: 4vH;
+  padding-right: 4vH;
+  position: relative;
+  text-align: center;
+}
+
+.footerElementsHours {
+  display: inline-block;
+  font-size: 2vH;
+  padding-left: 4vH;
+  padding-right: 3vH;
+  position: relative;
+  text-align: left;
+}
+
+
+@media (max-width:500vH max-height: 500vH;) {
+  .footer .footerElements .footerElementsHours {
+    display: block;
+    width: 100%;
+    margin-bottom: 2vH;
+    text-align: center;
+  }
+}
+
+</style>
+
+<body>
+<ul class="footer" style="font-family: Helvetica; " >
+  <li class="footerElementsHours">M, W, Th, F : 8am - 5pm <br> T, Sat : By Appointment Only</li>
+  <li class="footerElements"> 2150 Appian Way #208 Pinole, CA 94564 </li>
+  <li class="footerElements"> Phone: (510) 741 - 7100 </li>
+  <li class="footerElements"> Fax: (510) 741 - 7335</li>
+  <li class="footerElements"> smilepinole@gmail.com</li>
+</ul>
+
+</body>
+
+
+</html>
