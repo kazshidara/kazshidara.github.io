@@ -82,14 +82,10 @@
   font-family: inherit;
   margin: 0;
   cursor: pointer;
- 
-
 }
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: transparent;
 }
-
-
 
 .dropdown-content {
   display: none;
@@ -132,9 +128,102 @@
   box-shadow:0 5px #555;
   transform: translateY(4px);
 }
+
+.container2 {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin: 0 auto;
+  top: -6vH;
+}
+
+.centeredTop {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 9.5vH;
+  font-family: Helvetica;
+}
+
+.centeredBottom {
+  position: absolute;
+  top: 50%;
+  left: 58%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+}
+
+.image {
+  -webkit-filter: blur(3px); 
+  filter: blur(3px);
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: transparent;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 100vH;
+  margin: 1.5vH;
+  text-align: center;
+  line-height: 3.5vH;
+  font-size: 2vH;
+  position: relative;
+  top: 0%;
+}
+
+.descriptionText {
+  font-size: 2.8vH;
+  font-family: Helvetica;
+}
+
+.footer {
+   position: relative;
+   width: 100%;
+   background-color: gray;
+   color: white;
+   list-style-type: none;
+   text-align: center;
+   margin: 0;
+   padding: 3vH;
+   bottom: 0;
+}
+
+.footerElements {
+  display: inline-block;
+  font-size: 2.0vH;
+  padding-left: 4vH;
+  padding-right: 4vH;
+  position: relative;
+  text-align: center;
+}
+
+.footerElementsHours {
+  display: inline-block;
+  font-size: 2vH;
+  padding-left: 4vH;
+  padding-right: 3vH;
+  position: relative;
+  text-align: left;
+}
+
+@media (max-width:500vH max-height: 500vH;) {
+  .footer .footerElements .footerElementsHours {
+    display: block;
+    width: 100%;
+    margin-bottom: 2vH;
+    text-align: center;
+  }
+}
+
 </style>
 </head>
-
 
 <body>
 <header class="main-header">
@@ -186,65 +275,6 @@
 
 <hr style=" position: relative; width: 100%; top: -5vH;">
 
-
-<style>
-
-.container2 {
-  position: relative;
-  text-align: center;
-  color: white;
-  margin: 0 auto;
-  top: -6vH;
-
-}
-
-.centeredTop {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 9.5vH;
-  font-family: Helvetica;
-}
-
-.centeredBottom {
-  position: absolute;
-  top: 50%;
-  left: 58%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 20px;
-}
-
-.image {
-  -webkit-filter: blur(3px); 
-  filter: blur(3px);
-}
-
-.flex-container {
-  display: flex;
-  justify-content: space-around;
-  background-color: transparent;
-}
-
-.flex-container > div {
-  background-color: #f1f1f1;
-  width: 100vH;
-  margin: 1.5vH;
-  text-align: center;
-  line-height: 3.5vH;
-  font-size: 2vH;
-  position: relative;
-  top: 0%;
-}
-
-.descriptionText {
-  font-size: 2.8vH;
-  font-family: Helvetica;
-}
-</style>
-
 <body>
 <div class="container2">
     <img src="./Pictures%20for%20the%20Website/IMG_2002.jpg" style="width: 100%; height: 60vH;" class = "image">
@@ -291,65 +321,13 @@
 
   </div>
 </div>
-</body>
-
-
 
 <br>
-
-
 <p style = "color: #4787B0; text-align: center; padding-left: 26%; padding-right: 26%; font-size: 2.8vH; "> Whatever your concern, we welcome the opprtunity to work with you. Please don't hesitate to call us to set up an appointment ~ <a href="tel:1-510-741-7100" style="color: #4787B0;">(510)741-7100</a>
 </p>
-
 <br>
 
-
-
-<style>
-
-.footer {
-   position: relative;
-   width: 100%;
-   background-color: gray;
-   color: white;
-   list-style-type: none;
-   text-align: center;
-   margin: 0;
-   padding: 3vH;
-   bottom: 0;
-}
-
-.footerElements {
-  display: inline-block;
-  font-size: 2.0vH;
-  padding-left: 4vH;
-  padding-right: 4vH;
-  position: relative;
-  text-align: center;
-}
-
-.footerElementsHours {
-  display: inline-block;
-  font-size: 2vH;
-  padding-left: 4vH;
-  padding-right: 3vH;
-  position: relative;
-  text-align: left;
-}
-
-
-@media (max-width:500vH max-height: 500vH;) {
-  .footer .footerElements .footerElementsHours {
-    display: block;
-    width: 100%;
-    margin-bottom: 2vH;
-    text-align: center;
-  }
-}
-
-</style>
-
-<body>
+<div>
 <ul class="footer" style="font-family: Helvetica; " >
   <li class="footerElementsHours">M, W, Th, F : 8am - 5pm <br> T, Sat : By Appointment Only</li>
   <li class="footerElements"> 2150 Appian Way #208 Pinole, CA 94564 </li>
@@ -357,9 +335,9 @@
   <li class="footerElements"> Fax: (510) 741 - 7335</li>
   <li class="footerElements"> smilepinole@gmail.com</li>
 </ul>
+</div>
+
 
 </body>
-
-
 </html>
 

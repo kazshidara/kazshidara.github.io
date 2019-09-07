@@ -50,7 +50,6 @@
   padding: 3vH 3vH;
   text-decoration: none;
   position: relative;
-
 }
 
 .dropdown {
@@ -80,14 +79,11 @@
   font-family: inherit;
   margin: 0;
   cursor: pointer;
- 
-
 }
+
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: transparent;
 }
-
-
 
 .dropdown-content {
   display: none;
@@ -130,6 +126,93 @@
   box-shadow:0 5px #555;
   transform: translateY(4px);
 }
+
+.container2 {
+  position: relative;
+  text-align: right;
+  color: black;
+  margin-bottom:50px;
+}
+
+.top-right {
+  position: absolute;
+  top: 10px;
+  right: 200px;
+  text-align: center;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica;
+}
+
+.container2 {
+  position: relative;
+  max-width: auto;
+  margin: 0 auto;
+}
+
+.content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.4); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 3px;
+}
+
+
+.footer {
+   position: relative;
+   width: 100%;
+   background-color: gray;
+   color: white;
+   list-style-type: none;
+   text-align: center;
+   margin: 0;
+   padding: 3vH;
+   bottom: 0;
+}
+
+.footerElements {
+  display: inline-block;
+  font-size: 2.0vH;
+  padding-left: 4vH;
+  padding-right: 4vH;
+  position: relative;
+  text-align: center;
+}
+
+.footerElementsHours {
+  display: inline-block;
+  font-size: 2vH;
+  padding-left: 4vH;
+  padding-right: 3vH;
+  position: relative;
+  text-align: left;
+}
+
+
+@media (max-width:500vH max-height: 500vH;) {
+  .footer .footerElements .footerElementsHours {
+    display: block;
+    width: 100%;
+    margin-bottom: 2vH;
+    text-align: center;
+  }
+}
+
 </style>
 </head>
 
@@ -184,123 +267,14 @@
 
 <hr style=" position: relative; width: 100%; top: -5vH;">
 
-<style>
-.container2 {
-  position: relative;
-  text-align: right;
-  color: black;
-  margin-bottom:50px;
-}
-
-.top-right {
-  position: absolute;
-  top: 10px;
-  right: 200px;
-  text-align: center;
-
-}
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-
-}
-
-</style>
-</head>
-
-
-<body>
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Helvetica;
-
-}
-
-.container2 {
-  position: relative;
-  max-width: auto;
-  margin: 0 auto;
-
-}
-
-
-
-.content {
-  position: absolute;
-  bottom: 0;
-  background: rgb(0, 0, 0); /* Fallback color */
-  background: rgba(0, 0, 0, 0.4); /* Black background with 0.5 opacity */
-  color: #f1f1f1;
-  width: 100%;
-  padding: 3px;
-}
-</style>
-</head>
-<body>
-
-
-
 <div class="container2">
   <img src="./Pictures%20for%20the%20Website/IMG_1898%20(1).jpg" alt="Home page pic of teens smiling" alt="Notebook" style="width:100%">
     <div class="content" class="center">
       <p style="text-align: center; font-family: Helvetica; font-size: 6.8vH;">Exceptional service and care for a smile <br> you can count on</p>
     </div>
 </div>  
-</body>
 
-
-<style>
-
-.footer {
-   position: relative;
-   width: 100%;
-   background-color: gray;
-   color: white;
-   list-style-type: none;
-   text-align: center;
-   margin: 0;
-   padding: 3vH;
-   bottom: 0;
-}
-
-.footerElements {
-  display: inline-block;
-  font-size: 2.0vH;
-  padding-left: 4vH;
-  padding-right: 4vH;
-  position: relative;
-  text-align: center;
-}
-
-.footerElementsHours {
-  display: inline-block;
-  font-size: 2vH;
-  padding-left: 4vH;
-  padding-right: 3vH;
-  position: relative;
-  text-align: left;
-}
-
-
-@media (max-width:500vH max-height: 500vH;) {
-  .footer .footerElements .footerElementsHours {
-    display: block;
-    width: 100%;
-    margin-bottom: 2vH;
-    text-align: center;
-  }
-}
-
-</style>
-
-<body>
+<div>
 <ul class="footer" style="font-family: Helvetica; " >
   <li class="footerElementsHours">M, W, Th, F : 8am - 5pm <br> T, Sat : By Appointment Only</li>
   <li class="footerElements"> 2150 Appian Way #208 Pinole, CA 94564 </li>
@@ -308,8 +282,7 @@ body {
   <li class="footerElements"> Fax: (510) 741 - 7335</li>
   <li class="footerElements"> smilepinole@gmail.com</li>
 </ul>
+</div>
 
 </body>
-
-
 </html>

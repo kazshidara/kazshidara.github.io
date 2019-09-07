@@ -3,7 +3,130 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <style>
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  position: relative;
+  float: left;
+  width: 32%;
+  margin-bottom: 60px;
+  padding: 4vH;
+}
+
+@media screen and (max-width: 100vH) {
+  .column {
+    width: 30%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.container3 {
+  padding: 0 16px;
+  position: relative;
+  top: -1vH;
+}
+
+.container3::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.name {
+  font: Cambria;
+  font-size: 4vH;
+  color: #333333;
+  font-style: normal;
+  text-align: center;
+
+}
+
+.title {
+  color: #4787B0;
+  font-family: Lora, Georgia;
+  font-size: 2.5vH;
+  font-style: italic;
+  text-align: center;
+}
+
+.description {
+  color: grey;
+  font: Cambria;
+  font-size: 2.5vH;
+  text-align: center;
+
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding-top: 6vH;
+
+
+}
+
+.container5 {
+  position: relative;
+  background-color: #4787B0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+ 
+}
+
+.image5 {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay5 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: gray;
+}
+
+.container5:hover .overlay5 {
+  opacity: .95;
+}
+
+.text5 {
+  color: white;
+  font-size: 3vH;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 
 .image1 {
   max-width: 100%;
@@ -132,9 +255,79 @@
   box-shadow:0 5px #555;
   transform: translateY(4px);
 }
+
+.container2 {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin: 0 auto;
+  max-width: auto;
+  background-color: transparent;
+  top: -6vH;
+
+}
+
+.centeredTop {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 65px;
+}
+
+.centeredBottom {
+  position: absolute;
+  top: 55%;
+  left: 58%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+}
+
+
+.footer {
+   position: relative;
+   width: 100%;
+   background-color: gray;
+   color: white;
+   list-style-type: none;
+   text-align: center;
+   margin: 0;
+   padding: 3vH;
+   bottom: 0;
+}
+
+.footerElements {
+  display: inline-block;
+  font-size: 2.0vH;
+  padding-left: 4vH;
+  padding-right: 4vH;
+  position: relative;
+  text-align: center;
+}
+
+.footerElementsHours {
+  display: inline-block;
+  font-size: 2vH;
+  padding-left: 4vH;
+  padding-right: 3vH;
+  position: relative;
+  text-align: left;
+}
+
+
+@media (max-width:500vH max-height: 500vH;) {
+  .footer .footerElements .footerElementsHours {
+    display: block;
+    width: 100%;
+    margin-bottom: 2vH;
+    text-align: center;
+  }
+}
+
 </style>
 </head>
-
 
 <body>
 <header class="main-header">
@@ -182,48 +375,8 @@
     </nav>
   </div>
 </header>
-</body>
 
 <hr style=" position: relative; width: 100%; top: -5vH;">
-
-
-<style>
-
-
-.container2 {
-  position: relative;
-  text-align: center;
-  color: white;
-  margin: 0 auto;
-  max-width: auto;
-  background-color: transparent;
-  top: -6vH;
-
-}
-
-.centeredTop {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 65px;
-}
-
-.centeredBottom {
-  position: absolute;
-  top: 55%;
-  left: 58%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 20px;
-}
-
-
-</style>
-
-
-<body>
 
 
 <div class="container2">
@@ -234,11 +387,6 @@
     <div class = "centeredBottom"> A perfect blend of quality and professionalisim. <br>&emsp; Working to provide the utmost care and service <br>to each and every one of you. </div>
 </div>
 
-</body>
-
-
-
-
 <img src="./Pictures%20for%20the%20Website/MomPic.jpg" style="float: left; height: 21% ; width: 21%; margin-left: 12vH; padding-bottom: 5vH; ">
 
 
@@ -247,7 +395,8 @@
 
 <p style="color: gray; text-align: center; padding-left: 60vH; padding-right: 10vH; font-size: 2.75vH; font-family: Helvetica; "> Dr. Shidara was born and raised in Tokyo, Japan and graduated from Nippon Dental University. She moved to California with her family shortly after receiving her Dental Degree to pursue a dental career in the Bay Area. She obtained her California Dental License from the University of California, San Francisco and the University of the Pacific where she served as an associate instructor for 4 years. She was also appointed department head at the Contra Costa County Hospital and supervised the Dental Department for 5 years. With over 20 years of experience, she says what motivates her is being able to interact with patients everyday alongside her talented staff. In her spare time, she is an avid runner, singer, and a mother of 3. </p>
 
-</body>
+
+
 <br>
 <br>
 <br>
@@ -260,136 +409,6 @@
 <br>
 <br>
 
-
-
-
-<style>
-
-html {
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-.column {
-  position: relative;
-  float: left;
-  width: 32%;
-  margin-bottom: 60px;
-  padding: 4vH;
-}
-
-@media screen and (max-width: 100vH) {
-  .column {
-    width: 30%;
-    display: block;
-  }
-}
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
-}
-
-.container3 {
-  padding: 0 16px;
-  position: relative;
-  top: -1vH;
-}
-
-.container3::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.name {
-  font: Cambria;
-  font-size: 4vH;
-  color: #333333;
-  font-style: normal;
-  text-align: center;
-
-}
-
-.title {
-  color: #4787B0;
-  font-family: Lora, Georgia;
-  font-size: 2.5vH;
-  font-style: italic;
-  text-align: center;
-}
-
-.description {
-  color: grey;
-  font: Cambria;
-  font-size: 2.5vH;
-  text-align: center;
-
-}
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  padding-top: 6vH;
-
-
-}
-
-.container5 {
-  position: relative;
-  background-color: #4787B0;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
- 
-}
-
-.image5 {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.overlay5 {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: gray;
-}
-
-.container5:hover .overlay5 {
-  opacity: .95;
-}
-
-.text5 {
-  color: white;
-  font-size: 3vH;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-
-</style>
-
-<body>
 
 <div class="row">
   <div class="column">
@@ -481,62 +500,12 @@ html {
         <h2 class="name">Hiring</h2>
         <p class="title">Dental Assistant</p>
         <p class = "description"></p>
-        
-        
       </div>
     </div>
   </div>
 </div>
 
-</body>
-
-
-
-<style>
-
-.footer {
-   position: relative;
-   width: 100%;
-   background-color: gray;
-   color: white;
-   list-style-type: none;
-   text-align: center;
-   margin: 0;
-   padding: 3vH;
-   bottom: 0;
-}
-
-.footerElements {
-  display: inline-block;
-  font-size: 2.0vH;
-  padding-left: 4vH;
-  padding-right: 4vH;
-  position: relative;
-  text-align: center;
-}
-
-.footerElementsHours {
-  display: inline-block;
-  font-size: 2vH;
-  padding-left: 4vH;
-  padding-right: 3vH;
-  position: relative;
-  text-align: left;
-}
-
-
-@media (max-width:500vH max-height: 500vH;) {
-  .footer .footerElements .footerElementsHours {
-    display: block;
-    width: 100%;
-    margin-bottom: 2vH;
-    text-align: center;
-  }
-}
-
-</style>
-
-<body>
+<div>
 <ul class="footer" style="font-family: Helvetica; " >
   <li class="footerElementsHours">M, W, Th, F : 8am - 5pm <br> T, Sat : By Appointment Only</li>
   <li class="footerElements"> 2150 Appian Way #208 Pinole, CA 94564 </li>
@@ -544,10 +513,9 @@ html {
   <li class="footerElements"> Fax: (510) 741 - 7335</li>
   <li class="footerElements"> smilepinole@gmail.com</li>
 </ul>
+</div>
 
 </body>
-
-
 </html>
 
 

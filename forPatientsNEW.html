@@ -3,6 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <style>
 
 .image1 {
@@ -52,7 +53,6 @@
   padding: 3vH 3vH;
   text-decoration: none;
   position: relative;
-
 }
 
 .dropdown {
@@ -82,14 +82,11 @@
   font-family: inherit;
   margin: 0;
   cursor: pointer;
- 
-
 }
+
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: transparent;
 }
-
-
 
 .dropdown-content {
   display: none;
@@ -132,6 +129,122 @@
   box-shadow:0 5px #555;
   transform: translateY(4px);
 }
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.flex-container > div {
+  background-color: #4787B0;
+  width: auto;
+  margin: 6vH;
+  text-align: center;
+  line-height: 2.75vH;
+  font-size: 3vH;
+  padding: 4vH;
+  border: double;
+  color: white;
+}
+
+.container2 {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin: 0 auto;
+  top: -6vH;
+}
+
+.centeredTop {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 3.5vH;
+}
+
+.centeredBottom {
+  position: absolute;
+  top: 80%;
+  left: 58%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 3.5vH;
+  text-align: left;
+}
+
+.image {
+  -webkit-filter: blur(2.5px); 
+  filter: blur(2.5px);
+}
+
+.container3 {
+  position: relative;
+  width: 10%;
+  display: block;
+  margin-right: auto;
+   margin-left: auto
+}
+
+.image2 {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.container3:hover .image2 {
+  opacity: 0.3;
+}
+
+.container3:hover  {
+  opacity: 1;
+}
+
+.footer {
+   position: relative;
+   width: 100%;
+   background-color: gray;
+   color: white;
+   list-style-type: none;
+   text-align: center;
+   margin: 0;
+   padding: 3vH;
+   bottom: 0;
+}
+
+.footerElements {
+  display: inline-block;
+  font-size: 2.0vH;
+  padding-left: 4vH;
+  padding-right: 4vH;
+  position: relative;
+  text-align: center;
+}
+
+.footerElementsHours {
+  display: inline-block;
+  font-size: 2vH;
+  padding-left: 4vH;
+  padding-right: 3vH;
+  position: relative;
+  text-align: left;
+}
+
+
+@media (max-width:500vH max-height: 500vH;) {
+  .footer .footerElements .footerElementsHours {
+    display: block;
+    width: 100%;
+    margin-bottom: 2vH;
+    text-align: center;
+  }
+}
+
 </style>
 </head>
 
@@ -186,114 +299,18 @@
 
 <hr style=" position: relative; width: 100%; top: -5vH;">
 
-<style>
-.flex-container {
-  display: flex;
-  justify-content: center;
-  background-color: transparent;
-
-}
-
-.flex-container > div {
-  background-color: #4787B0;
-  width: auto;
-  margin: 6vH;
-  text-align: center;
-  line-height: 2.75vH;
-  font-size: 3vH;
-  padding: 4vH;
-  border: double;
-  color: white;
-   ;
-}
-</style>
-</head>
-<body>
-
-
-<style>
-
-
-.container2 {
-  position: relative;
-  text-align: center;
-  color: white;
-  margin: 0 auto;
-  top: -6vH;
-
-}
-
-.centeredTop {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 3.5vH;
-}
-
-.centeredBottom {
-  position: absolute;
-  top: 80%;
-  left: 58%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 3.5vH;
-  text-align: left;
-}
-
-.image {
-  -webkit-filter: blur(2.5px); 
-  filter: blur(2.5px);
-  
-
-}
-</style>
-
 <div class="container2">
     <img src="./Pictures%20for%20the%20Website/IMG_4580.jpg" style="width: 100%; height: 70vH; -webkit-filter: blur(2px);filter: blur(2px);" class = "image">
     <div style= "position: absolute; width:100%; height:100%; background-color:black; opacity:0.35; top: 0;"></div>
    
     <div class = "centeredTop"> We strive to meet our patients' needs with the highest standard of dental care. Our mission is to not only provide quality care but to also listen, examine, and resolve any medical problem on an individual level. We are thrilled to welcome you to our dental family and look forward to working with you.  </div>
-    <div class = "centeredBottom">  Sincerely, <br> Dr. Shidara and Staff</div>
-    
+    <div class = "centeredBottom">  Sincerely, <br> Dr. Shidara and Staff</div> 
 </div>
 
-<style>
-.container3 {
-  position: relative;
-  width: 10%;
-  display: block;
-  margin-right: auto;
-   margin-left: auto
-
-}
-
-.image2 {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
-}
-
-.container3:hover .image2 {
-  opacity: 0.3;
-}
-
-.container3:hover  {
-  opacity: 1;
-}
-
-
-</style>
-
-
 <div style="font-family: Helvetica;">
-  
   <p style="font-size: 6vH; text-align: center;">New Patient Forms</p>
   <p style="font-size: 3.5vH; text-align: center; margin: 8vH;">Prior to your first office visit, please download, print, and fill out the following form and bring it with you. If you have any questions, feel free to reach us at (510) 741-7100. </p>
+</div>
 
 
 <p style="font-size: 3.5vH; text-align: center;"> Click on the icon below to access the forms: </p>
@@ -303,17 +320,15 @@
   </div>
 </a>
 
-
 <br>
 <br>
 <br>
 <br>
 <br>
-</div>
-
 
 <div style="background-color: #4787B0; padding: 25px; width: 100%;">
   <p style="font-family: helvetica; font-size: 6vH; margin-left: 3vH; position: center; color: white;">What you can expect on your first visit: </p>
+</div>
 
   <div class="flex-container">
     <div>Clinical <br> Comprehensive <br>Exam</div>
@@ -321,53 +336,8 @@
     <div>In-person <br> Consultation <br> with Dr. Shidara</div>
   </div>
 
-</div>
 
-<style>
-
-.footer {
-   position: relative;
-   width: 100%;
-   background-color: gray;
-   color: white;
-   list-style-type: none;
-   text-align: center;
-   margin: 0;
-   padding: 3vH;
-   bottom: 0;
-}
-
-.footerElements {
-  display: inline-block;
-  font-size: 2.0vH;
-  padding-left: 4vH;
-  padding-right: 4vH;
-  position: relative;
-  text-align: center;
-}
-
-.footerElementsHours {
-  display: inline-block;
-  font-size: 2vH;
-  padding-left: 4vH;
-  padding-right: 3vH;
-  position: relative;
-  text-align: left;
-}
-
-
-@media (max-width:500vH max-height: 500vH;) {
-  .footer .footerElements .footerElementsHours {
-    display: block;
-    width: 100%;
-    margin-bottom: 2vH;
-    text-align: center;
-  }
-}
-
-</style>
-
-<body>
+<div>
 <ul class="footer" style="font-family: Helvetica; " >
   <li class="footerElementsHours">M, W, Th, F : 8am - 5pm <br> T, Sat : By Appointment Only</li>
   <li class="footerElements"> 2150 Appian Way #208 Pinole, CA 94564 </li>
@@ -375,8 +345,7 @@
   <li class="footerElements"> Fax: (510) 741 - 7335</li>
   <li class="footerElements"> smilepinole@gmail.com</li>
 </ul>
+</div>
 
 </body>
-
-
 </html>

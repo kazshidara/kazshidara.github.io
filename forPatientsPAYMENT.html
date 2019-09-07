@@ -3,6 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <style>
 
 .image1 {
@@ -82,14 +83,11 @@
   font-family: inherit;
   margin: 0;
   cursor: pointer;
- 
-
 }
+
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: transparent;
 }
-
-
 
 .dropdown-content {
   display: none;
@@ -132,9 +130,75 @@
   box-shadow:0 5px #555;
   transform: translateY(4px);
 }
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  align-items: stretch;
+  height: 75vH;
+
+}
+
+.flex-container > div {
+  background-color: transparent;
+  width: 700px;
+  margin: 80px;
+  text-align: center;
+  line-height: auto; 
+  font-family: Helvetica;
+}
+
+.image {
+  display: block; 
+  margin-right: auto; 
+  margin-left: auto;
+  width: 8vH;
+  height:8vH;
+}
+
+.footer {
+   position: relative;
+   width: 100%;
+   background-color: gray;
+   color: white;
+   list-style-type: none;
+   text-align: center;
+   margin: 0;
+   padding: 3vH;
+   bottom: 0;
+}
+
+.footerElements {
+  display: inline-block;
+  font-size: 2.0vH;
+  padding-left: 4vH;
+  padding-right: 4vH;
+  position: relative;
+  text-align: center;
+}
+
+.footerElementsHours {
+  display: inline-block;
+  font-size: 2vH;
+  padding-left: 4vH;
+  padding-right: 3vH;
+  position: relative;
+  text-align: left;
+}
+
+
+@media (max-width:500vH max-height: 500vH;) {
+  .footer .footerElements .footerElementsHours {
+    display: block;
+    width: 100%;
+    margin-bottom: 2vH;
+    text-align: center;
+  }
+}
+
 </style>
 </head>
-
 
 <body>
 <header class="main-header">
@@ -186,36 +250,6 @@
 
 <hr style=" position: relative; width: 100%; top: -5vH;">
 
-<style>
-.flex-container {
-  display: flex;
-  justify-content: center;
-  background-color: transparent;
-  align-items: stretch;
-  height: 75vH;
-
-}
-
-.flex-container > div {
-  background-color: transparent;
-  width: 700px;
-  margin: 80px;
-  text-align: center;
-  line-height: auto; 
-  font-family: Helvetica;
-}
-
-.image {
-  display: block; 
-  margin-right: auto; 
-  margin-left: auto;
-  width: 8vH;
-  height:8vH;
-}
-
-</style>
-
-
 <div class="flex-container">
  
   <div style="font-size: 3.7vH;">General Information 
@@ -241,11 +275,7 @@
     </ul>
   </div>
 
-
-
-
-
-  <div style="font-size: 3.7vH;">Payment Options
+<div style="font-size: 3.7vH;">Payment Options
     <br>
     <br>
     <img src="./Pictures%20for%20the%20Website/a6df7eb2-1159-4207-8f4b-8dc2770a663d_200x200.png" class="image">
@@ -259,60 +289,15 @@
   </div>  
 </div>
 
-<style>
-
-.footer {
-   position: relative;
-   width: 100%;
-   background-color: gray;
-   color: white;
-   list-style-type: none;
-   text-align: center;
-   margin: 0;
-   padding: 3vH;
-   bottom: 0;
-}
-
-.footerElements {
-  display: inline-block;
-  font-size: 2.0vH;
-  padding-left: 4vH;
-  padding-right: 4vH;
-  position: relative;
-  text-align: center;
-}
-
-.footerElementsHours {
-  display: inline-block;
-  font-size: 2vH;
-  padding-left: 4vH;
-  padding-right: 3vH;
-  position: relative;
-  text-align: left;
-}
-
-
-@media (max-width:500vH max-height: 500vH;) {
-  .footer .footerElements .footerElementsHours {
-    display: block;
-    width: 100%;
-    margin-bottom: 2vH;
-    text-align: center;
-  }
-}
-
-</style>
-
-<body>
-<ul class="footer" style="font-family: Helvetica; " >
+<div>
+<ul class="footer" style="font-family: Helvetica;">
   <li class="footerElementsHours">M, W, Th, F : 8am - 5pm <br> T, Sat : By Appointment Only</li>
   <li class="footerElements"> 2150 Appian Way #208 Pinole, CA 94564 </li>
   <li class="footerElements"> Phone: (510) 741 - 7100 </li>
   <li class="footerElements"> Fax: (510) 741 - 7335</li>
   <li class="footerElements"> smilepinole@gmail.com</li>
 </ul>
+</div>
 
 </body>
-
-
 </html>
